@@ -704,8 +704,421 @@ def seed_data():
     for instrument, qty, diff, solo in instruments_planets:
         add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
 
+    # Piece 19: Mozart Symphony No. 40
+    print("Adding Mozart 40...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 40 in G minor, K. 550",
+        composer="Wolfgang Amadeus Mozart",
+        year=1788,
+        period="Classical",
+        duration=29,
+        difficulty=4,
+        popularity=5,
+        notes="One of two Mozart minor key symphonies. Passionate and dramatic."
+    )
+    
+    instruments_mozart40 = [
+        ("Flute", 1, 4, False),
+        ("Oboe", 2, 4, False),
+        ("Clarinet", 2, 4, False),
+        ("Bassoon", 2, 4, False),
+        ("Horn", 2, 4, False),
+        ("Violin I", 12, 4, False),
+        ("Violin II", 10, 4, False),
+        ("Viola", 8, 4, False),
+        ("Cello", 6, 4, False),
+        ("Double Bass", 4, 4, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_mozart40:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 20: Mozart Symphony No. 41 "Jupiter"
+    print("Adding Mozart Jupiter...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 41 in C major, K. 551 'Jupiter'",
+        composer="Wolfgang Amadeus Mozart",
+        year=1788,
+        period="Classical",
+        duration=33,
+        difficulty=4,
+        popularity=5,
+        notes="Mozart's final symphony. Spectacular contrapuntal finale."
+    )
+    
+    instruments_jupiter = [
+        ("Flute", 1, 4, False),
+        ("Oboe", 2, 4, False),
+        ("Bassoon", 2, 4, False),
+        ("Horn", 2, 4, False),
+        ("Trumpet", 2, 4, False),
+        ("Timpani", 1, 4, False),
+        ("Violin I", 12, 4, False),
+        ("Violin II", 10, 4, False),
+        ("Viola", 8, 4, False),
+        ("Cello", 6, 4, False),
+        ("Double Bass", 4, 4, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_jupiter:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 21: Mendelssohn Symphony No. 4 "Italian"
+    print("Adding Mendelssohn Italian...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 4 in A major, Op. 90 'Italian'",
+        composer="Felix Mendelssohn",
+        year=1833,
+        period="Romantic",
+        duration=28,
+        difficulty=4,
+        popularity=5,
+        notes="Sunny and energetic. Inspired by Italian travels. Very popular."
+    )
+    
+    instruments_italian = [
+        ("Flute", 2, 4, False),
+        ("Oboe", 2, 4, False),
+        ("Clarinet", 2, 4, False),
+        ("Bassoon", 2, 4, False),
+        ("Horn", 2, 4, False),
+        ("Trumpet", 2, 4, False),
+        ("Timpani", 1, 4, False),
+        ("Violin I", 14, 4, False),
+        ("Violin II", 12, 4, False),
+        ("Viola", 10, 4, False),
+        ("Cello", 8, 4, False),
+        ("Double Bass", 6, 4, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_italian:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 22: Tchaikovsky Symphony No. 5
+    print("Adding Tchaikovsky 5...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 5 in E minor, Op. 64",
+        composer="Pyotr Ilyich Tchaikovsky",
+        year=1888,
+        period="Romantic",
+        duration=45,
+        difficulty=4,
+        popularity=5,
+        notes="Famous horn solo in second movement. Fate motif throughout."
+    )
+    
+    instruments_tchaik5 = [
+        ("Flute", 2, 4, False),
+        ("Oboe", 2, 4, False),
+        ("Clarinet", 2, 4, False),
+        ("Bassoon", 2, 4, False),
+        ("Horn", 4, 4, True),
+        ("Trumpet", 2, 4, False),
+        ("Trombone", 3, 4, False),
+        ("Tuba", 1, 4, False),
+        ("Timpani", 1, 4, False),
+        ("Violin I", 14, 4, False),
+        ("Violin II", 12, 4, False),
+        ("Viola", 10, 4, False),
+        ("Cello", 8, 4, False),
+        ("Double Bass", 6, 4, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_tchaik5:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 23: Tchaikovsky Symphony No. 6 "Pathétique"
+    print("Adding Tchaikovsky 6 Pathétique...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 6 in B minor, Op. 74 'Pathétique'",
+        composer="Pyotr Ilyich Tchaikovsky",
+        year=1893,
+        period="Romantic",
+        duration=47,
+        difficulty=5,
+        popularity=5,
+        notes="Tchaikovsky's final symphony. Tragic and emotional. Unconventional slow finale."
+    )
+    
+    instruments_pathetique = [
+        ("Flute", 2, 5, False),
+        ("Oboe", 2, 5, False),
+        ("Clarinet", 2, 5, False),
+        ("Bassoon", 2, 5, True),
+        ("Horn", 4, 5, False),
+        ("Trumpet", 2, 5, False),
+        ("Trombone", 3, 5, False),
+        ("Tuba", 1, 5, False),
+        ("Timpani", 1, 5, False),
+        ("Violin I", 14, 5, False),
+        ("Violin II", 12, 5, False),
+        ("Viola", 10, 5, False),
+        ("Cello", 8, 5, False),
+        ("Double Bass", 6, 5, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_pathetique:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 24: Brahms Symphony No. 1
+    print("Adding Brahms 1...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 1 in C minor, Op. 68",
+        composer="Johannes Brahms",
+        year=1876,
+        period="Romantic",
+        duration=45,
+        difficulty=5,
+        popularity=5,
+        notes="Brahms' First. Compared to Beethoven's 10th. Heroic finale."
+    )
+    
+    instruments_brahms1 = [
+        ("Flute", 2, 5, False),
+        ("Oboe", 2, 5, False),
+        ("Clarinet", 2, 5, False),
+        ("Bassoon", 2, 5, False),
+        ("Contrabassoon", 1, 5, False),
+        ("Horn", 4, 5, True),
+        ("Trumpet", 2, 5, False),
+        ("Trombone", 3, 5, False),
+        ("Timpani", 1, 5, False),
+        ("Violin I", 14, 5, False),
+        ("Violin II", 12, 5, False),
+        ("Viola", 10, 5, False),
+        ("Cello", 8, 5, False),
+        ("Double Bass", 6, 5, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_brahms1:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 25: Brahms Symphony No. 4
+    print("Adding Brahms 4...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 4 in E minor, Op. 98",
+        composer="Johannes Brahms",
+        year=1885,
+        period="Romantic",
+        duration=40,
+        difficulty=5,
+        popularity=5,
+        notes="Brahms' final symphony. Passacaglia finale. Autumnal and profound."
+    )
+    
+    instruments_brahms4 = [
+        ("Flute", 2, 5, False),
+        ("Oboe", 2, 5, False),
+        ("Clarinet", 2, 5, False),
+        ("Bassoon", 2, 5, False),
+        ("Contrabassoon", 1, 5, False),
+        ("Horn", 4, 5, False),
+        ("Trumpet", 2, 5, False),
+        ("Trombone", 3, 5, False),
+        ("Timpani", 1, 5, False),
+        ("Triangle", 1, 3, False),
+        ("Violin I", 14, 5, False),
+        ("Violin II", 12, 5, False),
+        ("Viola", 10, 5, False),
+        ("Cello", 8, 5, False),
+        ("Double Bass", 6, 5, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_brahms4:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 26: Schubert Symphony No. 8 "Unfinished"
+    print("Adding Schubert Unfinished...")
+    piece_id = add_piece(
+        conn,
+        title="Symphony No. 8 in B minor, D. 797 'Unfinished'",
+        composer="Franz Schubert",
+        year=1822,
+        period="Romantic",
+        duration=22,
+        difficulty=3,
+        popularity=5,
+        notes="Only two movements. Lyrical and mysterious. Perfect concert opener."
+    )
+    
+    instruments_schubert = [
+        ("Flute", 2, 3, False),
+        ("Oboe", 2, 3, False),
+        ("Clarinet", 2, 3, False),
+        ("Bassoon", 2, 3, False),
+        ("Horn", 2, 3, False),
+        ("Trumpet", 2, 3, False),
+        ("Trombone", 3, 3, False),
+        ("Timpani", 1, 3, False),
+        ("Violin I", 12, 3, False),
+        ("Violin II", 10, 3, False),
+        ("Viola", 8, 3, False),
+        ("Cello", 6, 3, False),
+        ("Double Bass", 4, 3, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_schubert:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 27: Bizet Carmen Suite No. 1
+    print("Adding Bizet Carmen Suite...")
+    piece_id = add_piece(
+        conn,
+        title="Carmen Suite No. 1",
+        composer="Georges Bizet",
+        year=1875,
+        period="Romantic",
+        duration=12,
+        difficulty=3,
+        popularity=5,
+        notes="Opera excerpts. Includes Toreador Song. Very audience-friendly."
+    )
+    
+    instruments_carmen = [
+        ("Piccolo", 1, 3, False),
+        ("Flute", 2, 3, False),
+        ("Oboe", 2, 3, False),
+        ("Clarinet", 2, 3, False),
+        ("Bassoon", 2, 3, False),
+        ("Horn", 4, 3, False),
+        ("Trumpet", 2, 3, False),
+        ("Trombone", 3, 3, False),
+        ("Timpani", 1, 3, False),
+        ("Percussion", 3, 3, False),
+        ("Harp", 1, 3, False),
+        ("Violin I", 12, 3, False),
+        ("Violin II", 10, 3, False),
+        ("Viola", 8, 3, False),
+        ("Cello", 6, 3, False),
+        ("Double Bass", 4, 3, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_carmen:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 28: Rimsky-Korsakov Scheherazade
+    print("Adding Scheherazade...")
+    piece_id = add_piece(
+        conn,
+        title="Scheherazade, Op. 35",
+        composer="Nikolai Rimsky-Korsakov",
+        year=1888,
+        period="Romantic",
+        duration=45,
+        difficulty=5,
+        popularity=5,
+        notes="Arabian Nights tales. Stunning violin solos. Spectacular orchestration."
+    )
+    
+    instruments_scheherazade = [
+        ("Piccolo", 1, 5, False),
+        ("Flute", 2, 5, False),
+        ("Oboe", 2, 5, False),
+        ("Clarinet", 2, 5, False),
+        ("Bassoon", 2, 5, False),
+        ("Horn", 4, 5, False),
+        ("Trumpet", 2, 5, False),
+        ("Trombone", 3, 5, False),
+        ("Tuba", 1, 5, False),
+        ("Timpani", 1, 5, False),
+        ("Percussion", 4, 5, False),
+        ("Harp", 1, 5, False),
+        ("Violin I", 16, 5, True),
+        ("Violin II", 14, 5, False),
+        ("Viola", 12, 5, False),
+        ("Cello", 10, 5, False),
+        ("Double Bass", 8, 5, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_scheherazade:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 29: Mussorgsky Pictures at an Exhibition (Ravel orchestration)
+    print("Adding Pictures at an Exhibition...")
+    piece_id = add_piece(
+        conn,
+        title="Pictures at an Exhibition",
+        composer="Modest Mussorgsky/Maurice Ravel",
+        year=1922,
+        period="Romantic",
+        duration=35,
+        difficulty=5,
+        popularity=5,
+        notes="Ravel's brilliant orchestration. Great Gate of Kiev finale. Showcases entire orchestra."
+    )
+    
+    instruments_pictures = [
+        ("Piccolo", 1, 5, False),
+        ("Flute", 3, 5, False),
+        ("Oboe", 3, 5, False),
+        ("English Horn", 1, 5, False),
+        ("Clarinet", 3, 5, False),
+        ("Bass Clarinet", 1, 5, False),
+        ("Bassoon", 2, 5, False),
+        ("Contrabassoon", 1, 5, False),
+        ("Horn", 4, 5, False),
+        ("Trumpet", 3, 5, False),
+        ("Trombone", 3, 5, False),
+        ("Tuba", 1, 5, False),
+        ("Timpani", 1, 5, False),
+        ("Percussion", 5, 5, False),
+        ("Harp", 1, 5, False),
+        ("Celesta", 1, 4, False),
+        ("Violin I", 16, 5, False),
+        ("Violin II", 14, 5, False),
+        ("Viola", 12, 5, False),
+        ("Cello", 10, 5, False),
+        ("Double Bass", 8, 5, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_pictures:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
+    # Piece 30: Rossini William Tell Overture
+    print("Adding William Tell Overture...")
+    piece_id = add_piece(
+        conn,
+        title="William Tell Overture",
+        composer="Gioachino Rossini",
+        year=1829,
+        period="Romantic",
+        duration=12,
+        difficulty=4,
+        popularity=5,
+        notes="Famous finale (Lone Ranger theme). Exciting concert opener."
+    )
+    
+    instruments_william_tell = [
+        ("Piccolo", 1, 4, False),
+        ("Flute", 2, 4, False),
+        ("Oboe", 2, 4, False),
+        ("English Horn", 1, 4, True),
+        ("Clarinet", 2, 4, False),
+        ("Bassoon", 2, 4, False),
+        ("Horn", 4, 4, False),
+        ("Trumpet", 2, 4, False),
+        ("Trombone", 3, 4, False),
+        ("Timpani", 1, 4, False),
+        ("Percussion", 3, 4, False),
+        ("Violin I", 14, 4, False),
+        ("Violin II", 12, 4, False),
+        ("Viola", 10, 4, False),
+        ("Cello", 8, 4, True),
+        ("Double Bass", 6, 4, False),
+    ]
+    
+    for instrument, qty, diff, solo in instruments_william_tell:
+        add_instrumentation(conn, piece_id, instrument, qty, diff, solo)
+
     conn.close()
-    print("\n✅ Added 13 total pieces successfully!")
+    print("\n✅ Added 30 total pieces successfully!")
 
 if __name__ == "__main__":
     seed_data()
